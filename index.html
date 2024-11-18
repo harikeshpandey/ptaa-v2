@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>P.T.A.A.</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" href="./assets/fevicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="logo">
+
+          <div>
+            <a href="./index.html">
+              <img class="imglogo" src="./assets/logo.png" alt="logo" />
+            </a>
+          </div>
+          
+        </div>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarTogglerDemo02"
+          aria-controls="navbarTogglerDemo02"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav ml-auto pl-5 mt-2 mt-lg-0">
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Overview
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="./Overview/AboutPTAA.html">About PTAA</a>
+                <a class="dropdown-item" href="./Overview/Aim and Objectives.html">Aim and Objective</a>
+                <a class="dropdown-item" href="./Overview/ExecutiveBody.html">Executive Body</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="#news"
+                
+              >
+                News
+              </a>
+              
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Alumni Database
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="./DataBase/Record.html">Add your record</a>
+                <!-- <a class="dropdown-item" href="#">Alumni search</a>
+                <a class="dropdown-item" href="#"
+                  >Corrections of personal detail</a
+                > -->
+              </div>
+            </li>
+            
+          
+            <!-- <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                PTAA registration
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Apply for PTAA membership</a>
+                <a class="dropdown-item" href="#">PTAA members</a>
+              </div>
+            </li> -->
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Publications
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="./Publications/Souvenir.html">Souvenir</a>
+                <a class="dropdown-item" href="./Publications/Latitude.html">Latitude'29</a>
+                <a class="dropdown-item" href="./Publications/Audient.html">Audient</a>
+              </div>
+            </li>
+            <!-- <li class="nav-item">
+              <button id="membershipBtn" class="nav-link p-2 membership-btn">PTAA Membership</button>
+            </li> -->
+            <li class="nav-item">
+              <a class="nav-link p-2 nav-button" href="./ContactUs/ContactUs.html">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+  <!-- Modified CAROUSEL section -->
+  <div class="carousel-container">
+    <!-- Fixed overlay text -->
+    <div class="fixed-overlay">
+      <h2 class="Mtext">P . T . A . A .</h2>
+      <p class="FFtext">PANTNAGAR TECHNOLOGY ALUMNI ASSOCIATION</p>
+    </div>
+
+    <!-- Carousel -->
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="3000">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="1000">
+          <img class="d-block w-100" src="./assets/image4.jpeg" alt="First slide" />
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="./assets/image5.jpg" alt="Second slide" />
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="./assets/image3.jpg" alt="Third slide" />
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="./assets/image1.jpg" alt="Fourth slide" />
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="./assets/image2.jpg" alt="Fifth slide" />
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </div>
+    <hr style="color: black; size: 20px" />
+    <!-- MESSAGES -->
+    <div class="connect">
+      <div class="left">
+        <div>
+          Messages
+        </div>
+        <div id="names" class="names">
+          <div class="active" id="chancButton"> Hon'ble Vice Chancellor</div>
+          <div id="deanButton">Dean, College of Technology</div>
+          <div id="secrButton">General Secretary, P.T.A.A.</div>
+        </div>
+      </div>
+      <div class="center">
+        <div id="chancMessage" class="messages">
+          <div class="img chanc"></div>
+          <div class="name">Dr. Manmohan Singh Chauhan</div>
+          <div class="post">Hon'ble Vice Chancellor</div>
+          <div class="message">
+            I am delighted to know that College of Technology, a constituent faculty of G. B. Pant University of Agriculture and Technology, is organizing SAMANVAY-The Annual Alumni Meet on 15th to 17th September 2022. It has been a unique experiment to establish College of Technology in an Agriculture University and when we look back at the past, one can safely comment that experiment has been successful and was later emulated by many other Agriculture Universities. The college is not restricted to core area of engineering/technology such as challenging areas of Electronics, Computer, IT etc. but has also expanded its domain in other areas of Agriculture, Agri- informatics, etc.
+
+            The college has vigorously on giving its budding talents a new path and attitude in order to make them capable of facing the real world challenges. Hope this magazine proves to create dynamic bond between the college and the alumni.
+
+            The G.B. Pant University of Agriculture and Technology has a very rich treasure in their alumni. Our Alumni has excelled in every sphere of life and apart from being responsible citizens they are holding high positions across the globe. The university is proud of its alumni and I wish them and their families a bright, happy and healthy future ahead.
+
+            The Dean of the College, President and General Secretary of PTAA along with the staff members, students, organizers and participating Alumni deserve my heartiest congratulations for this wonderful initiative. I wish that this alumni meet SAMANVAY-2022 brings a new era of joy and enlightenment.</br>
+
+            My best wishes and good luck to every one.</br>
+            Dr. Manmohan Singh Chauhan</br>
+            Vice Chancellor,</br>
+            G.B. Pant University of Agriculture & Technology, Pantnagar</br>
+          </div>
+        </div>
+        <div id="deanMessage" class="messages hidden">
+          <div class="img dean"></div>
+          <div class="name">Dr. Alaknanda Ashok</div>
+          <div class="post">Dean, College Of Technology</div>
+          <div class="message">
+            The G.B. Pant University of Agriculture and Technology has a very rich treasure in their alumni. Our Alumni has excelled in every sphere of life and apart from being responsible citizens they are holding high positions across the globe. The university is proud of its alumni and I wish them and their families a bright, happy and healthy future ahead.
+  
+            The Dean of the College, President and General Secretary of PTAA along with the staff members, students, organizers and participating Alumni deserve my heartiest congratulations for this wonderful initiative.
+          </div>
+        </div>
+        <div id="secrMessage" class="messages hidden">
+          <div class="img secr"></div>
+          <div class="name">Vinod Kumar</div>
+          <div class="post">General Secretary, PTAA</div>
+          <div class="message">
+            The Alma mater of an individual is where the life takes its form. From making friends to discovering one's 
+            field of interest, it is the place where we transform into who we are today. The impetus that institute 
+            provides to each and every individual is a gift to be cherished throughout one's life.
+
+            The College of Technology, Pantnagar has been a crucial platform in career building of thousands of students 
+            since 1962. The college share the concept that the Alma mater is not just an academic centre but also a place 
+            for proper grooming of every individual in all fields so as to make them a great citizen of the country. It 
+            is with this intent that for about 60 years now, the college has been and will continue to develop 
+            outstanding engineers, leaders and administrators for the nation and the world. The co-curricular and 
+            extra-curricular activities develop versatile engineers who actively contribute a lot in their professional 
+            and social life.
+
+            Pantnagar Technology Alumni Association (PTAA) is a registered body and has a strong alumni base with high 
+            intellect who have excelled in all spheres of life and have brought name and fame for themselves and the 
+            institute. It is now time to come back to the institute and share your intellect with students and faculty 
+            in many different ways.The networking would be a pleasure for continuing students while they interact with 
+            Alumni. This will be beneficial to them in all possible ways, such as career guidance, endowment, lectures, 
+            working towards start-ups and helping each other.
+
+            I, on behalf of the Association, invite all the Alumni of College of Technology, Pantnagar, wherever they 
+            may be, to join us in serving the Alma materby becoming member of the PTAA.
+            <br/>
+            Thanking You,<br/>
+            With warm regards<br/>
+            Vinod Kumar<br/>
+            General Secretary, PTAA<br/>
+            Ph.D. (Irrigation & Drainage Engineering)<br/>
+            1986 Batch Agricultural Engineering<br/>
+          </div>
+        </div>
+      </div>
+
+      <!-- NEWS AND NOTICES -->
+      <div id="news"  class="right">
+          <div>
+            <div class="title">News and Notices</div>
+            <div class="news">
+              <div><span><img class="blink" src="./assets/new.png"></span><img style="height:100%; width:80%;" src="./assets/NewYear.jpg"></div>
+              <div><span><img class="blink" src="./assets/new.png"></span><a style="color: black;" href="./assets/24july.pdf">चौहान-कंवर उत्कृष्ट परमशार्दाता परामर्शप्राप्तकर्ता पुरस्कार प्रौद्योगिकी महाविद्यालय एमटेक एवं पीएचडी कर रहे छात्र/छात्राओं को गाइड कर रहे संकाय सदस्यो के सम्मान में |</a></div>
+              <div><span class="noblink"></span><a style="color: black;" href="./assets/invite2023.pdf">Invitation for Samanvay 2023</a></div>
+              <div><span><img class="news-item"></span><a style="color: black;" href="./assets/ias.jpg">PTAA Extends Heartiest Congratulations to Successful Candidates of the Civil Services Examinations 2022</a></div>
+              <div><span><img class="news-item"></span><a style="color: black;" href="./assets/3march2023.pdf">स्वर्गीय माता श्री की स्मृति में श्रीमती मिथिलेश तिवारी स्मृति अकादमिक उत्कर्षता पुरस्कार</a></div>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+<!-- FOOTER -->
+  <footer class="text-center text-white" style="background-color: #800000">
+    <!-- Grid container -->
+    <div class="mx-2">
+      <!-- Section: Links -->
+      <section class="mt-5">
+        <!-- Grid row-->
+        <div class="row text-center d-flex justify-content-center pt-5">
+          <!-- Grid column -->
+          <div class="col-md-2">
+            <h6 class="text-uppercase font-weight-bold">
+              <a href="http://www.gbpuat-tech.ac.in/" class="text-white">College Website</a>
+            </h6>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-2">
+            <h6 class="text-uppercase font-weight-bold">
+              <a href="#!" class="text-white">A.I.P.A.A.</a>
+            </h6>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-2">
+            <h6 class="text-uppercase font-weight-bold">
+              <a href="#!" class="text-white">W.P.A.A</a>
+            </h6>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-2">
+            <h6 class="text-uppercase font-weight-bold">
+              <a href="http://www.gbpuat.ac.in/" class="text-white">University Website</a>
+            </h6>
+          </div>
+        </div>
+        <!-- Grid row-->
+      </section>
+      <!-- Section: Links -->
+
+      <hr class="my-3 clean" />
+
+      <!-- Section: Text -->
+      <section class="pb-5">
+        <div class="row d-flex justify-content-center">
+          <div class="col-lg-8">
+            <p>
+              © Pantnagar Technology Alumni Association(P.T.A.A.), Pantnagar | This site is designed by <a href="./websiteteam.html" style="color:white ; font-weight:650">PTAA 
+              Website Team</a> and maintained by <a href="./alumnicell.html" style="color:white; font-weight:650;">Alumni Cell (P.T.A.A. student representatives)</a>
+            </p>
+          </div>
+        </div>
+      </section> 
+    </div>
+  </footer>
+  <div id="membershipDialog" class="dialog-overlay">
+    <div class="dialog-content">
+      <h2 id="dialogTitle">PTAA Membership Verification</h2>
+      <p id="dialogMessage">Are you a member of PTAA?</p>
+      <div class="dialog-buttons" id="choiceButtons">
+        <button class="dialog-btn cancel-btn" onclick="handleResponse(false)">No</button>
+        <button class="dialog-btn confirm-btn" onclick="handleResponse(true)">Yes</button>
+      </div>
+      <div class="dialog-buttons" id="closeButton" style="display: none;">
+        <button class="dialog-btn confirm-btn" onclick="closeDialog()">Close</button>
+      </div>
+    </div>
+  </div>
+    
+    <script src="./script.js"></script>
+    
+  </body>
+</html>

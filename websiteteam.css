@@ -1,0 +1,159 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Bebas Neue', sans-serif;
+    width: auto;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+/* HEADER STYLING */
+header{
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+.logo{
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+}
+
+.imglogo{
+    width: 200px;
+    height: 70px;
+}
+
+.navbar-nav{
+    width: 100%;
+    justify-content: space-around;
+}
+.nav-link{
+    font-size: large;
+    font-weight: 700;
+}
+.nav-button{
+    background-color: #800000;
+    border-radius: 0;
+    color: white !important;
+}
+.dropdown-item{
+    font-size: large;
+    font-weight: 700!important;
+    color: rgba(0,0,0,.5) !important;
+}
+
+.footer{
+    width: 100%;
+}
+.clean{
+    border: 1px solid transparent !important;
+}
+
+
+#Alcell
+
+.wrapper{
+    display: grid;
+    /* grid-template-areas: 'ALcell rightcolumn '
+'ALcell rightcolumn'; */
+    grid-row-gap: 5vw;
+    grid-template-columns: auto , auto;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    #wrapper{
+      grid-template-areas: 'ALcell ALcell '
+    'rightcolumn rightcolumn' !important;
+    }
+  }
+
+
+
+
+
+#Alcell{
+
+
+    grid-area: ALcell;
+    /* width:60vw; */
+    height:fit-content;
+    background-color:white;
+    margin: 1.8rem;
+    padding: 0.8rem;
+    box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.75);
+}
+
+.rightcolumn{
+    display: grid;
+  grid-template-columns: 1fr 1fr; /* two equal columns */
+  gap: 20px;
+ padding-left: 20%;
+    /* width: 300px; */
+}
+
+.Alcell{
+    text-align: center;
+    margin-top:2%;
+    margin-bottom:2%;
+}
+
+.Alcell2{
+    margin-left:60px;
+    font-size:18px;
+    margin-right:60px;
+}
+.panel {
+    border: none;
+    box-shadow: none;
+    color:#333;
+    margin-bottom:26px;
+    background-color: #fff;
+}
+
+#insta_logo{
+    height:3rem;
+    width:3rem;
+}
+
+@media (max-width: 768px) {
+    .rightcolumn {
+      grid-template-columns: 1fr; /* single column on mobile */
+    }
+  }
+
+
+
+
+/* Website Team */
+#WebTeam{
+    margin-top:3%;
+    margin-bottom:3%;
+    margin-left: 15%;
+    margin-right: 15%;
+    width:1000px;
+    height:800px;
+    background-color:white;
+    border-radius: 5%;
+    box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.75);
+    padding: 10px;
+}
+
+.WebTeam{
+    text-align: center;
+    margin-top:2%;
+    margin-bottom:2%;
+}
+
+.WebTeam2{
+    margin-left:60px;
+    font-size:18px;
+    margin-right:60px;
+}

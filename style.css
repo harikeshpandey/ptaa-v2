@@ -1,0 +1,439 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+/* HEADER STYLING */
+header{
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+.logo{
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+}
+
+.imglogo{
+    width: 200px;
+    height: 70px;
+}
+
+.navbar-nav{
+    width: 100%;
+    justify-content: space-around;
+}
+.nav-link{
+    font-size: large;
+    font-weight: 700;
+}
+.nav-button{
+    background-color: #800000;
+    border-radius: 0;
+    color: white !important;
+}
+.dropdown-item{
+    font-size: large;
+    font-weight: 700!important;
+    color: rgba(0,0,0,.5) !important;
+}
+
+
+
+
+/* CAROUSEL STYLING */
+.carousel-item > img{
+    height: 85vh;
+    opacity: 70%;
+}
+
+.carousel-caption{
+    position: absolute;
+    top: 3%;
+    text-align: center;
+    z-index: 10;
+    font-family: 'Black Ops One';
+
+    
+}
+
+.Mtext{
+    font-size: 75px;
+    font-weight: 700;
+    color:black;
+    opacity: 50%;
+}
+
+.FFtext{
+    font-size: 35px;
+    font-weight: 700;
+    color:black;
+    opacity: 50%;
+
+}
+
+.tback{
+    background-color: rgb(200, 200, 200 , 0.4);
+
+}
+
+
+/*CONNECTING STYLING */
+.connect{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1.4fr;
+    padding: 2rem;
+}
+
+.left{
+    margin-right: 1rem;
+    padding-right: 1rem;
+}
+
+.left > div:first-of-type{
+    font-size: x-large;
+    padding: 0.5rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.left > div:last-of-type{
+    display: flex;
+    flex-direction: column;
+}
+
+.names > div{
+    padding: 1rem;
+    background-color: #ffffff2c;
+    border-bottom: 2px solid gainsboro;
+    padding-bottom: 0.5rem;
+    padding-top: 1rem;
+    cursor: pointer;
+    border-radius: 2px;
+}
+
+.active, .names > div:hover, .names > div:active, .names > div:focus{
+    background-color: rgba(220, 220, 220, 0.873) !important;
+}
+
+.right{
+    padding: 1rem;
+    padding-top: 0;
+    height: 300px;
+    width: fit-content;
+}
+
+
+.right > div{
+    border: 2px solid gainsboro;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+
+}
+
+.title{
+    font-size: x-large;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    height: 30%;
+}
+
+#news{
+    scroll-margin-top: 100px;
+}
+
+.news{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    overflow-y: scroll;
+    width: fit-content;
+}
+
+.news::-webkit-scrollbar {
+    width: 5px !important;
+}
+
+.news::-webkit-scrollbar-thumb {
+background: #888;
+}
+
+.news::-webkit-scrollbar-thumb:hover {
+background: #555; 
+}
+
+.news > div{
+    margin-bottom: 2rem;
+    display: flex;
+    width: 100%;
+}
+
+.news-item{
+    margin-left: 60px;
+}
+
+.blink{
+    height: 60px;
+    width: 60px;
+    animation: blink 1s steps(1, end) infinite;
+}
+.noblink{
+    height: 60px;
+    width: 60px;
+}
+
+
+@keyframes blink {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+
+
+.hidden{
+    display: none !important;
+}
+
+.messages{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.img{
+    width: 8rem;
+    height: 8rem;
+    background-size: cover;
+    border-radius: 50%;
+}
+
+.name{
+    font-size: 2rem;
+    margin-bottom: 0.25rem;
+}
+
+.post{
+    font-size: 1.25rem;
+    color: gray;
+    margin-bottom: 1rem;
+}
+
+.message{
+    text-align: justify;
+    font-size: 18px;
+    margin-bottom: 2rem;
+}
+
+.chanc{
+    background-image: url("./assets/chancelor.jpeg");
+}
+.dean{
+    background-image: url("./assets/dean.jpeg");
+}
+.secr{
+    background-image: url("./assets/seceratory.jpg");
+}
+footer{
+    /* position: relative; */
+    bottom:0% !important;
+    width: 100% !important;
+}
+.clean{
+    border: 1px solid transparent !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 980px) {
+    .nav-button{
+        width: 45%;
+        border-radius: 20px;
+    }
+
+    .connect{
+        display: block;
+        grid-template-columns: 1fr;
+    }
+
+    .left{
+        margin-bottom: 2rem;
+    }
+
+    .logo{
+        width: 50%;
+    }
+    .logo > div{
+        height: 65px;
+        width: 100%;
+    }
+    
+}
+
+@media (max-width: 420px) {
+    .carousel-item > img{
+        height: 65vh;
+    }
+}
+
+
+.carousel-container {
+    position: relative;
+    width: 100%;
+  }
+
+  .fixed-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    text-align: center;
+    width: 100%;
+    pointer-events: none; /* Allows clicks to pass through to carousel controls */
+  }
+
+  .fixed-overlay .Mtext {
+    font-size: 75px;
+    font-weight: 700;
+    color:black;
+    opacity: 50%;
+  }
+
+  .fixed-overlay .FFtext {
+    font-size: 35px;
+    font-weight: 700;
+    color:black;
+    opacity: 50%;
+  }
+
+  .carousel-item img {
+    height: 600px;
+    object-fit: cover;
+  }
+
+  .membership-btn {
+    background-color: #800000;
+    color: white !important;
+    border-radius: 4px;
+    border: none;
+    transition: background-color 0.3s;
+  }
+  
+  .membership-btn:hover {
+    background-color: #600000;
+  }
+  
+  .dialog-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .dialog-content {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    max-width: 500px;
+    width: 90%;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .dialog-content h2 {
+    color: #333;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+  }
+  
+  .dialog-content p {
+    color: #666;
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+  }
+  
+  .dialog-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+  
+  .dialog-btn {
+    padding: 0.5rem 1.5rem;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+  }
+  
+  .cancel-btn {
+    background-color: #e0e0e0;
+    color: #333;
+  }
+  
+  .cancel-btn:hover {
+    background-color: #d0d0d0;
+  }
+  
+  .confirm-btn {
+    background-color: #800000;
+    color: white;
+  }
+  
+  .confirm-btn:hover {
+    background-color: #600000;
+  }
+
+  @media (max-width  : 980px){
+    .membership-btn {
+        background-color: #800000;
+        color: white !important;
+        border-radius: 20px;
+        border: none;
+        transition: background-color 0.3s;
+      }
+      
+      .membership-btn:hover {
+        background-color: #600000;
+      }
+  }

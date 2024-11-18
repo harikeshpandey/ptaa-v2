@@ -1,0 +1,168 @@
+/* Global styles */
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Background */
+.background-img {
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0.65;
+}
+
+/* Main content container */
+.main-container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    flex: 1;
+}
+
+/* Common box styles */
+.box, .box1 {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    margin: 2rem auto;
+    padding: 2rem;
+    box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.75);
+    line-height: 1.6;
+    width: 100%;
+    max-width: 1000px;
+}
+
+/* Text styles */
+.AboutPTAA, .AAO {
+    text-align: center;
+    margin: 1.5rem 0;
+    color: #800000;
+    padding: 1rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.AboutPTAA-para, .AAO-point {
+    margin: 0 auto;
+    font-size: clamp(1rem, 2.5vw, 1.18rem);
+    font-weight: 600;
+    padding: 0 1rem;
+    max-width: 900px;
+}
+
+/* Header styles */
+.header {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    width: 100%;
+}
+
+h1 {
+    color: #2c3e50;
+    font-size: clamp(1.5rem, 3vw, 2rem);
+    margin-bottom: 1rem;
+}
+
+/* Navigation */
+.nav-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+/* Footer styles */
+footer {
+    background-color: #800000;
+    color: white;
+    padding: 2rem 0;
+    margin-top: auto;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 1rem;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.footer-text {
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+/* Media Queries */
+@media screen and (max-width: 1200px) {
+    .main-container {
+        padding: 15px;
+    }
+    
+    .box, .box1 {
+        width: 95%;
+        margin: 1.5rem auto;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .main-container {
+        padding: 10px;
+    }
+    
+    .box, .box1 {
+        padding: 1.5rem;
+        margin: 1rem auto;
+    }
+
+    .AboutPTAA, .AAO {
+        margin: 1rem 0;
+        padding: 0.5rem;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .main-container {
+        padding: 5px;
+    }
+    
+    .box, .box1 {
+        width: 98%;
+        padding: 1rem;
+        margin: 0.5rem auto;
+    }
+
+    .AboutPTAA-para, .AAO-point {
+        font-size: 1rem;
+        padding: 0 0.5rem;
+    }
+}

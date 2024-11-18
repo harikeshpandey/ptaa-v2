@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PTAA Office Order</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        body {
+            background-color: #f5f5f5;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .header h1 {
+            color: #800000;
+            font-size: 32px;
+            font-weight: bold;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #800000;
+            display: inline-block;
+        }
+
+        .description {
+            margin-bottom: 30px;
+            line-height: 1.6;
+            color: #333;
+            text-align: justify;
+        }
+
+        .section-title {
+            margin: 30px 0 20px;
+            font-size: 18px;
+            font-weight: bold;
+            color: #800000;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 30px;
+            background: white;
+        }
+
+        th, td {
+            padding: 12px 15px;
+            text-align: left;
+            border: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #800000;
+            color: white;
+            font-weight: 500;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        tr:hover {
+            background-color: #f5f5f5;
+        }
+
+        .sn-column {
+            width: 80px;
+        }
+
+        .name-column {
+            width: 250px;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 15px;
+            }
+
+            table {
+                font-size: 14px;
+            }
+
+            th, td {
+                padding: 8px 10px;
+            }
+
+            .sn-column {
+                width: 50px;
+            }
+
+            .name-column {
+                width: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>OFFICE ORDER</h1>
+        </div>
+        
+        <div class="description">
+            The Annual General Body Meeting of Pantnagar Technology Alumni Association (P.T.A.A.) was convened on September 18, 2021 at 12:15 PM in the Conference Hall of College of Technology (Old Building). The members present in the house elected following officers for the next Executive Committee for the period of 2021-22 and 2022-23:
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th class="sn-column">S.N.</th>
+                    <th class="name-column">Name of Member</th>
+                    <th>Position</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Dr. Ajit Kumar</td>
+                    <td>President</td>
+                </tr>
+                <!-- <tr>
+                    <td>2</td>
+                    <td>Er. Anurag Bhandari</td>
+                    <td>Vice-President</td>
+                </tr> -->
+                <tr>
+                    <td>2</td>
+                    <td>Dr. Vinod Kumar</td>
+                    <td>General Secretary</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Dr. Sonika Chauhan</td>
+                    <td>Treasurar</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Dr. Manish Tiwari</td>
+                    <td>Secretary-I</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Dr. Abhishek Tomar</td>
+                    <td>Secretary-II</td>
+                </tr>
+                <!-- <tr>
+                    <td>7</td>
+                    <td>Er. R.K. Singh</td>
+                    <td>PRO-I</td>
+                </tr> -->
+                <tr>
+                    <td>6</td>
+                    <td>Dr. Shobhit Gupta</td>
+                    <td>PRO-II</td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <div class="section-title">
+            In addition to the above, the following were elected as Zonal Coordinators:
+        </div>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th class="sn-column">S.N.</th>
+                    <th class="name-column">Name of Member</th>
+                    <th>Position</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Er. K.C. Belwal</td>
+                    <td>Central Zone</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Er. Naveen Goel</td>
+                    <td>Northern Zone</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Er. Manoj Rawat</td>
+                    <td>Western Zone</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Er. Amit Tyagi/<br>Mr. Sumit Gulati</td>
+                    <td>Southern Zone</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Er. P.N. Singh/<br>Er. Sanjay Tiwari</td>
+                    <td>Eastern Zone</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

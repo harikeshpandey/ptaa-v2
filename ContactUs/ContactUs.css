@@ -1,0 +1,62 @@
+.contact-us-section {
+    padding: 4rem 0;
+    background-color: #f5f5f5;
+  }
+  
+  .section-title {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #800000;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .alumni-cell-contact,
+  .executive-body-contact {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact-item {
+    margin-bottom: 2rem;
+  }
+  
+  .contact-item h3 {
+    color: #800000;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    margin-bottom: 0.5rem;
+  }
+  
+  .contact-item p {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+  }
+  
+  .contact-item p:last-child {
+    margin-bottom: 0;
+  }
+  
+  .breadcrumb {
+    background-color: transparent;
+    padding: 1rem 0;
+  }
+  
+  .breadcrumb-item a {
+    color: #6c757d;
+    text-decoration: none;
+  }
+  
+  .breadcrumb-item.active {
+    color: #800000;
+    font-weight: 600;
+  }
+
+  .clean{
+    border: 1px solid transparent !important;
+}
