@@ -37,6 +37,7 @@
               <img  class="imglogo" src="../assets/logo.png" alt="logo" />
             </a>
           </div>
+          
         </div>
 
         <button
@@ -78,6 +79,7 @@
               >
                 News
               </a>
+              
             </li>
             <li class="nav-item dropdown">
               <a
@@ -93,8 +95,27 @@
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <a class="dropdown-item" href="./Record.html">Add your record</a>
+                <a class="dropdown-item" href="#">Alumni search</a>
+                <a class="dropdown-item" href="#">Corrections of personal detail</a>
               </div>
             </li>
+            <!-- <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                PTAA registration
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Apply for PTAA membership</a>
+                <a class="dropdown-item" href="#">PTAA members</a>
+              </div>
+            </li> -->
             <li class="nav-item dropdown">
               <a
                 class="nav-link dropdown-toggle"
@@ -114,22 +135,13 @@
               </div>
             </li>
             <li class="nav-item">
-              <a
-                class="nav-link"
-                href="../Achievers/Achievers.html"
-              >
-                Achievers
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link p-2 nav-button" href="../ContactUs/ContactUs.html">Contact Us</a>
+              <a class="nav-link p-2 nav-button" href="#">Contact Us</a>
             </li>
           </ul>
         </div>
       </nav>
     </header>
-    
-    <!-- breadcrumb -->
+<!-- breadcrumb -->
     <nav aria-label="breadcrumb">
       <ol class="breadcrumb">
         <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
@@ -138,16 +150,82 @@
       </ol>
     </nav>
 
-    <div class="container">
-      <div class="row">
-        <div class="col-12 col-md-8 offset-md-2">
-          <div class="box">
-            <img class="background-img" src="../assets/college-of-technology-pantnagar.jpg" />
-            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf-hy_mqToM47uWBCZY1l9Nez6ayUbWOgt_juDZGfIhNDKesQ/viewform?embedded=true" width="100%" height="520" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-          </div>
-        </div>
-      </div>
+    <div class="box">
+      <img class="background-img" src="../assets/college-of-technology-pantnagar.jpg" />
+        <h3>Personal Details</h3>
+        <form id="alumniForm">
+            <label for="id">ID Number*</label>
+            <input type="number" id="id" name="entry.686190506" value="" placeholder="ID Number" required><br>
+            <label for="fname">First Name*</label>
+            <input type="text" id="fname" name="fname" value="" required><br>
+            <label for="mname">Midlle Name</label>
+            <input type="text" id="mname" name="mname" value=""><br>
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lname" value=""><br>
+            <label for="batch">Batch*</label>
+            <input type="number" id="batch" name="batch" value="" required><br>
+            <label for="branch">Branch*</label>
+            <input type="text" id="branch" name="branch" value="" required><br>
+            <label>Gender*</label>
+            <input type="radio" id="gender-male" name="gender" value="Male" required>
+            <label for="gender-male">Male</label>
+            
+            <input type="radio" id="gender-female" name="gender" value="Female" required>
+            <label for="gender-female">Female</label>
+        
+        <h3 style="display: flex ; align-self: center; justify-content: center">Address</h3>
+        
+            <label for="address1">Address Line 1</label>
+            <input type="text" id="address1" name="address1" value="" required><br>
+            <label for="address2">Address Line 2</label>
+            <input type="text" id="address2" name="address2" value=""><br>
+            <label for="city">City</label>
+            <input type="text" id="city" name="city" value="" required><br>
+            <label for="state">State</label>
+            <input type="text" id="state" name="state" value="" required><br>
+            <label for="country">Country</label>
+            <input type="text" id="country" name="country" value="" required><br>
+            <label for="Pincode">Pin Code</label>
+            <input type="text" id="Pincode" name="Pincode" value="" required><br>
+        
+        <h3  style="display: flex ; align-self: center; justify-content: center">Contact Details</h3>
+        
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" value="" ><br>
+            <label for="linkedin">Linkedin</label>
+            <input type="text" id="linkedin" name="linkedin" value="" ><br>
+            <label for="facebook">Facebook</label>
+            <input type="text" id="facebook" name="facebook" value="" ><br>
+            <label for="landline">Landline</label>
+            <input type="number" id="landline" name="landline" value="" ><br>
+            <label for="phn_number">Mobile Number</label>
+            <input type="number" id="phn_number" name="phn_number" value="" ><br>
+        
+
+        <h3 style="display: flex ; align-self: center; justify-content: center">Professional Details</h3>
+
+    <label for="org">Organisation</label>
+    <input type="text" id="org" name="org" value=""><br>
+    <label for="designation">Designation</label>
+    <input type="text" id="designation" name="designation" value=""><br>
+    <label for="off_number">Office Number</label>
+    <input type="text" id="off_number" name="off_number" value=""><br>
+    <label for="profession">Profession</label>
+    <input type="text" id="profession" name="profession" value=""><br>
+    <label for="expertise">Area of Expertise</label>
+    <input type="text" id="expertise" name="expertise" value=""><br>
+    
+    <!-- Add the submit button -->
+    <div class="submit-container">
+        <button type="submit" id="submitBtn" class="submit-btn">Submit Record</button>
+        <div id="submitStatus" class="submit-status"></div>
     </div>
+</form>
+
+    </div>
+
+    
+
 
     <!-- FOOTER -->
     <footer class="text-center text-white" style="background-color: #800000">
@@ -207,5 +285,5 @@
           </section> 
         </div>
       </footer>
-  </body>
-</html>
+      <script src="./dbScript.js"></script>
+      </body>

@@ -11,49 +11,66 @@ document.getElementById('alumniForm').addEventListener('submit', async function(
 
     try {
         // Collect form data
-        const formData = {
-            'entry.686190506': document.getElementById('id').value, // also update karna entry.686190506 whatever you get after getting from page source of google form same for all
-            'entry.firstName': document.getElementById('fname').value,
-            'entry.middleName': document.getElementById('mname').value,
-            'entry.lastName': document.getElementById('lname').value,
-            'entry.batch': document.getElementById('batch').value,
-            'entry.branch': document.getElementById('branch').value,
-            'entry.gender': document.querySelector('input[name="gender"]:checked')?.value,
-            'entry.address1': document.getElementById('address1').value,
-            'entry.address2': document.getElementById('address2').value,
-            'entry.city': document.getElementById('city').value,
-            'entry.state': document.getElementById('state').value,
-            'entry.country': document.getElementById('country').value,
-            'entry.pincode': document.getElementById('Pincode').value,
-            'entry.email': document.getElementById('email').value,
-            'entry.linkedin': document.getElementById('linkedin').value,
-            'entry.facebook': document.getElementById('facebook').value,
-            'entry.landline': document.getElementById('landline').value,
-            'entry.mobile': document.getElementById('phn_number').value,
-            'entry.organization': document.getElementById('org').value,
-            'entry.designation': document.getElementById('designation').value,
-            'entry.officeNumber': document.getElementById('off_number').value,
-            'entry.profession': document.getElementById('profession').value,
-            'entry.expertise': document.getElementById('expertise').value
+        const formData = new FormData();
+        
+        // Mapping form fields to Google Form entry fields
+        const fieldMapping = {
+            'id': 'entry.1098127830',
+            'fname': 'entry.1286708401',
+            'mname': 'entry.1188318800',
+            'lname': 'entry.1353692994',
+            'batch': 'entry.1601390016',
+            'branch': 'entry.1775995771',
+            'gender': 'entry.801614107',
+            'address1': 'entry.942593849',
+            'address2': 'entry.1193456953',
+            'city': 'entry.1023433258',
+            'state': 'entry.1065299633',
+            'country': 'entry.637734272',
+            'Pincode': 'entry.959112493',
+            'email': 'entry.1995705557',
+            'linkedin': 'entry.2036726104',
+            'facebook': 'entry.1011874038',
+            'landline': 'entry.1094420000',
+            'phn_number': 'entry.280658330',
+            'org': 'entry.590726749',
+            'designation': 'entry.1950901750',
+            'off_number': 'entry.842363583',
+            'profession': 'entry.276729101',
+            'expertise': 'entry.1954270882'
         };
 
-        const googleFormUrl = 'Link Here For Google Form'; // Put google form link here
+        // Add form data to FormData object
+        Object.keys(fieldMapping).forEach(fieldId => {
+            const element = document.getElementById(fieldId);
+            
+            // Special handling for radio buttons
+            if (fieldId === 'gender') {
+                const selectedGender = document.querySelector('input[name="gender"]:checked');
+                console.log(selectedGender);
+                if (selectedGender) {
+                    formData.append(fieldMapping[fieldId], selectedGender.value);
+                }
+            } else if (element) {
+                formData.append(fieldMapping[fieldId], element.value);
+            }
+        });
+
+        const googleFormUrl = 'https://docs.google.com/forms/u/0/d/e/1FAIpQLSf-hy_mqToM47uWBCZY1l9Nez6ayUbWOgt_juDZGfIhNDKesQ/formResponse';
+        
         // Submit the form
         const response = await fetch(googleFormUrl, {
             method: 'POST',
             mode: 'no-cors',
-            headers: {
-                'Content-Type': 'application/x-www-form-urlencoded',
-            },
-            body: new URLSearchParams(formData).toString()
+            body: formData
         });
 
         // Show success message
         statusDiv.innerHTML = 'Form submitted successfully!';
         statusDiv.className = 'submit-status success';
         
-        // Reset all forms
-        document.querySelectorAll('form').forEach(form => form.reset());
+        // Reset the form
+        document.getElementById('alumniForm').reset();
 
     } catch (error) {
         console.error('Submission error:', error);
@@ -64,18 +81,4 @@ document.getElementById('alumniForm').addEventListener('submit', async function(
         submitBtn.disabled = false;
         submitBtn.innerHTML = 'Submit Record';
     }
-});
-
-// Add form validation
-document.querySelectorAll('input[required]').forEach(input => {
-    input.addEventListener('invalid', function(e) {
-        e.preventDefault();
-        this.classList.add('invalid');
-    });
-
-    input.addEventListener('input', function() {
-        if (this.validity.valid) {
-            this.classList.remove('invalid');
-        }
-    });
 });
